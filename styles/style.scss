@@ -1,8 +1,15 @@
+@import "setup";
 @import "components/header";
-@import "components/_main.scss";
+@import "components/main";
 @import "components/footer";
+@import "typography";
 
-
+.wrapper {
+    max-width:1170px;
+    width:auto;
+    margin:0 auto;
+    // background-color:orange;
+}
 
 
 

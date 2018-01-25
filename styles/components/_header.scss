@@ -1,3 +1,59 @@
-header {
-    color:blue;
+.info-bar {
+    background:#222221;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    min-height:80px;
+}
+
+.info-contact {
+    font-family:'Montserrat', sans-serif;
+    font-weight:300;
+    .info-phone {
+        &:before {
+                  
+        }
+    }
+}
+.info-logo {
+    display:flex;
+    align-items: center;
+    img {
+        max-width:38px;
+    }
+}
+h1 {
+    font-size:20px;
+    font-weight:300;
+    text-transform:uppercase;
+    margin:0;
+    padding:0 10px;
+}
+.info-login {
+    ul {
+        display:flex;
+        list-style:none;
+        justify-content: space-between;
+        // width:120px;
+    }
+    li
+    
+    a {
+        color:white;
+        font-size:12px;
+        text-decoration:none;
+        font-weight:300;
+        padding:10px;
+        font-family:'Raleway', sans-serif;
+        // background: lavender;
+        
+    }
+}
+
+.info-login ul li:first-child:after {
+    content:'';
+    width:2px;
+    height:5px;
+    background-color:orange;
 }
