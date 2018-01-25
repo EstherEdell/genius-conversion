@@ -1,9 +1,9 @@
 header {
   color: blue; }
 
+body {
+  background: blue; }
+
 footer {
   background: green;
   color: blue; }
-
-body {
-  background: red; }
