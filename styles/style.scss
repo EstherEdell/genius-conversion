@@ -1,8 +1,8 @@
 @import "setup";
+@import "variables";
 @import "components/header";
 @import "components/main";
 @import "components/footer";
-@import "typography";
 
 .wrapper {
     max-width:1170px;

@@ -132,6 +132,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+h3 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px; }
+
 .info-bar {
   background: #222221;
   color: white;
@@ -148,7 +154,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .info-contact {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 12px; }
 
 .info-logo {
   display: -webkit-box;
@@ -172,9 +179,10 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin: 0; }
 
 .info-login li
 a {
@@ -191,11 +199,63 @@ a {
   height: 5px;
   background-color: orange; }
 
-h3 {
-  font-family: "Raleway", sans-serif;
+.main-nav {
+  max-width: 740px;
+  margin: 0 auto; }
+
+.main-nav-links ul {
+  list-style: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 28px 0; }
+
+.main-nav-links a {
+  text-decoration: none;
   text-transform: uppercase;
-  color: black;
-  font-size: 18px; }
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121;
+  line-height: 24px; }
+
+.main-nav-links .fa-shopping-cart {
+  color: #86bc42; }
+
+.hero {
+  background: url("../assets/hero-image.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
+
+.hero-text {
+  text-align: center;
+  color: #242c42;
+  padding-top: 250px; }
+  .hero-text h2 {
+    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 90px;
+    margin: 0; }
+  .hero-text p {
+    font-size: 18px;
+    line-height: 30px; }
+  .hero-text a {
+    background: #86bc42;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    line-height: 90px;
+    font-weight: 700;
+    padding: 25px 35px 25px;
+    letter-spacing: 1px; }
 
 .wrapper {
   max-width: 1170px;

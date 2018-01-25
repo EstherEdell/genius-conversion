@@ -10,6 +10,7 @@
 .info-contact {
     font-family:'Montserrat', sans-serif;
     font-weight:300;
+    font-size:12px;
     .info-phone {
         &:before {
                   
@@ -34,7 +35,8 @@ h1 {
     ul {
         display:flex;
         list-style:none;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        margin:0;
         // width:120px;
     }
     li
@@ -56,4 +58,63 @@ h1 {
     width:2px;
     height:5px;
     background-color:orange;
+}
+.main-nav {
+    max-width:740px;
+    margin:0 auto;
+}
+.main-nav-links {
+    ul {
+    list-style: none;
+    align-items: center;
+    padding:0;
+    display: flex;
+    justify-content: space-around;
+    padding:28px 0;
+    }
+    a {
+        text-decoration: none;
+        text-transform:uppercase;
+        font-size:14px;
+        font-weight:700;
+        color:#212121;
+        line-height:24px;
+    }
+}
+.main-nav-links .fa-shopping-cart {
+    color:$primaryColor;
+}
+
+.hero {
+    background:url('../assets/hero-image.jpg');
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+.hero-text {
+    text-align: center;
+    color:#242c42;
+    padding-top:250px;
+    h2 {
+        text-transform: uppercase;
+        font-size:72px;
+        line-height:90px;
+        margin:0;
+    }
+    p {
+        font-size:18px;
+        line-height:30px;
+    }
+    a {
+        background:$primaryColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        color:white;
+        font-size:18px;
+        line-height:90px;
+        font-weight: 700;
+        padding:25px 35px 25px;
+        letter-spacing: 1px;
+    }
 }
