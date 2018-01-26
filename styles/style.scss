@@ -1,15 +1,35 @@
 @import "setup";
 @import "variables";
 @import "components/header";
-@import "components/main";
-@import "components/footer";
-
+@import "components/courses";
+@import "components/_gallery.scss";
+@import"components/footer";
+body {
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    display:block;
+    // width:100%;
+}
 .wrapper {
     max-width:1170px;
     width:auto;
     margin:0 auto;
     // background-color:orange;
 }
+
+
+.circle {
+        width:40px;
+        height:40px;
+        border:1px;
+        background-color:#b7b7b7;
+        border-radius: 20px;
+        // float:left;
+        // display: flex;
+
+}
+
 
 
 

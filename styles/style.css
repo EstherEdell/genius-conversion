@@ -136,7 +136,22 @@ h3 {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: black;
-  font-size: 18px; }
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  margin: 0; }
+
+h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #222222;
+  text-align: center;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 20px; }
 
 .info-bar {
   background: #222221;
@@ -230,14 +245,15 @@ a {
 .hero {
   background: url("../assets/hero-image.jpg");
   width: 100%;
-  height: 100vh;
+  min-height: 950px;
+  height: 100%;
   background-size: cover;
   background-position: center; }
 
 .hero-text {
   text-align: center;
   color: #242c42;
-  padding-top: 250px; }
+  padding-top: 310px; }
   .hero-text h2 {
     text-transform: uppercase;
     font-size: 72px;
@@ -245,7 +261,9 @@ a {
     margin: 0; }
   .hero-text p {
     font-size: 18px;
-    line-height: 30px; }
+    line-height: 30px;
+    margin-bottom: 55px;
+    margin-top: 55px; }
   .hero-text a {
     background: #86bc42;
     text-decoration: none;
@@ -255,9 +273,116 @@ a {
     line-height: 90px;
     font-weight: 700;
     padding: 25px 35px 25px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-top: 50px; }
+
+.courses-nav ul {
+  list-style: none;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 60px; }
+
+.courses-nav li {
+  display: inline-block; }
+
+.courses-nav a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  padding: 10px 30px 10px 0; }
+
+.courses-nav a:hover {
+  color: #86bc42; }
+
+.courses-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 180px;
+  height: 100%; }
+
+.courses-blocks div {
+  margin-bottom: 30px; }
+
+.courses-text {
+  max-width: 270px;
+  min-height: 200px;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  padding: 0 25px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+  .courses-text h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .courses-text h6 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 20px; }
+  .courses-text a {
+    color: #86bc42;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300; }
+
+.course-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .course-author div {
+    margin: 0; }
+
+.course-author div:nth-child(2) {
+  padding-left: 20px; }
+
+.course-response {
+  border-top: 1px solid #e1e1e1; }
+  .course-response span {
+    font-size: 14px;
+    line-height: 24px; }
+
+.fa-users, .fa-comments {
+  color: #666;
+  padding-right: 5px; }
+
+.course-response span:nth-child(3) {
+  color: #86bc42;
+  position: relative;
+  left: 110px; }
+
+body {
+  font-family: 'Raleway', sans-serif; }
+
+img {
+  display: block; }
 
 .wrapper {
   max-width: 1170px;
   width: auto;
   margin: 0 auto; }
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 1px;
+  background-color: #b7b7b7;
+  border-radius: 20px; }
