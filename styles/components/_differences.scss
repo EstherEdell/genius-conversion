@@ -1,0 +1,49 @@
+.difference {
+    background:$secondaryColor;
+}
+
+.diff-info {
+    display:flex;
+    align-items: space-between;
+    justify-content: space-between;
+    margin-top:130px;
+    padding-bottom: 135px;
+}
+.diff-info div {
+    
+    img {
+        width:100%;
+        max-width:30px;
+    }
+    h5 {
+        font-size:24px;
+        color:#222;
+        font-weight:700;
+        line-height:24px;
+        margin:0;
+    }
+}
+.concept, .experience, .design {
+   display:flex;
+   align-items:flex-start;
+   max-width:335px;
+
+    
+}
+
+.diff-text {
+    padding-left:15px;
+
+ 
+}
+
+// .concept h5:before {
+//     content:url('../assets/concept-icon.png');
+// }
+// .experience h5:before {
+//     content:url('../assets/experience-icon.png');
+// }
+// .design h5:before {
+//     content:url('../assets/design-icon.png');
+// }
+

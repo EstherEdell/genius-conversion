@@ -1,5 +1,6 @@
 $baseFont: 'Raleway', sans-serif;
 $primaryColor:rgb(134, 188, 66);
+$secondaryColor:#f0f2f7;
 
 
 h3 {
@@ -8,7 +9,7 @@ h3 {
     color:black;
     font-size:38px;
     font-weight:700;
-    line-height: 24px;
+    // line-height: 24px;
     text-align: center;
     margin:0;
 }
