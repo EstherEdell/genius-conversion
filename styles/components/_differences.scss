@@ -24,26 +24,38 @@
     }
 }
 .concept, .experience, .design {
-   display:flex;
-   align-items:flex-start;
-   max-width:335px;
+    display:flex;
+    align-items:flex-start;
+    max-width:335px;
+    position: relative;
+    
 
     
 }
 
 .diff-text {
     padding-left:15px;
+    z-index:10000;
 
  
 }
+.bg-circle {
+    background:rgba(255, 255, 255, 0.5);
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left:-50px;
+    z-index: 0;
 
-// .concept h5:before {
-//     content:url('../assets/concept-icon.png');
-// }
-// .experience h5:before {
-//     content:url('../assets/experience-icon.png');
-// }
-// .design h5:before {
-//     content:url('../assets/design-icon.png');
-// }
+}
 
+@media (max-width:667px) {
+    .diff-info {
+        flex-direction: column;
+        margin-top:75px;
+        margin-left:25px;
+        
+    }
+}

@@ -14,10 +14,12 @@
     <header>
         <!-- INFO BAR -->
         <div class="info-bar">
-
+            
                 <div class="info-contact wrapper">
-                    <span class="info-phone">(541)-754-3010</span>
-                    <span class="email">contact@com.vn</span>
+                    <ul>
+                        <li class="info-phone"><i class="fas fa-phone"></i>(541)-754-3010</li>
+                        <li class="email"><i class="far fa-envelope"></i><a href="mailto:contact@com.vn">contact@com.vn</a></li>
+                    </ul>
                 </div>
                 <div class="info-logo wrapper">
                     <img src="assets/genius-logo.png" alt="">
@@ -25,7 +27,7 @@
                 </div>
                 <div class="info-login wrapper">
                     <ul>
-                        <li><a href="">Register</a></li>
+                        <li class="register"><a href="">Register</a></li>
                         <li><a href="">Login</a></li>
                     </ul>
                 </div>
@@ -33,7 +35,8 @@
         </div>
         <!-- HEADER NAV -->
         <div class="main-nav">
-            <nav class="main-nav-links">
+            <nav class="main-nav-links wrapper">
+                <span>O</span>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Pages</a></li>
@@ -43,10 +46,10 @@
                     <li><a href="">News</a></li>
                     <li><a href="">Events</a></li>
                     <li>
-                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <a href=""><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <a href=""><i class="fas fa-search" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -58,7 +61,6 @@
                 <a href="">Start Learning Now!</a>
             </div>
         </div>
-
     </header>
     <!-- MAIN CONTENT -->
     <main> 
@@ -67,6 +69,8 @@
                 <div class="section-head">
                     <h4>Touch them if you want</h4>
                     <h3>Trending Courses</h3>
+                    <img src="assets/open-magazine.png" alt="" class="mag-icon">
+
                 </div>
                 <div class="courses-nav">
                     <ul>
@@ -236,6 +240,7 @@
                     <div class="section-head">
                         <h4>Lorem Ipsum Dolor</h4>
                         <h3>See Photo Gallery</h3>
+                        <img src="assets/open-magazine.png" alt="" class="mag-icon">
                     </div>
                     <div class="gallery-photos">
                         <div>
@@ -257,6 +262,8 @@
                         <div class="section-head">
                             <h4>Lorem Ipsum Dolor</h4>
                             <h3>Latest News</h3>
+                            <img src="assets/open-magazine.png" alt="" class="mag-icon">
+                            
                         </div>
                         <div class="news-container">
                             <div class="news-text">
@@ -303,6 +310,7 @@
                         <div class="section-head">
                             <h4>Lorem Ipsum Dolor</h4>
                             <h3>What Makes Us Different?</h3>
+                            <img src="assets/open-magazine.png" alt="" class="mag-icon">
                         </div>
                         <div class="diff-info">
                             <div class="concept">
@@ -311,14 +319,15 @@
                                     <h5>Concept</h5>
                                     <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum has been . Lorem Ipsum has been</p>
                                 </div>
+                                <div class="bg-circle"></div>
                             </div>
                             <div class="experience">
                                 <img src="assets/experience-icon.png" alt="">
                                 <div class="diff-text">
                                     <h5>Experience</h5>
                                     <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum has been . Lorem Ipsum has been</p>
-            
                                 </div> 
+                                <div class="bg-circle"></div>
                             </div>
                             <div class="design">
                                 <img src="assets/design-icon.png" alt="">
@@ -326,6 +335,7 @@
                                     <h5>Design</h5>
                                     <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum has been . Lorem Ipsum has been</p>
                                 </div>
+                                <div class="bg-circle"></div>
                             </div>
                         </div>
                     </div>
@@ -337,15 +347,17 @@
                     <div class="section-head">
                         <h4>Choose Your Pricing</h4>
                         <h3>The Best Pricing We Offer</h3>
+                        <img src="assets/open-magazine.png" alt="" class="mag-icon">
                     </div>
-                    <div class="price-options">
-                        <div>
+                    <div class="price-container wrapper">
+
+                        <div class="price-options">
                             <div class="trial-price">
                                 <span>0</span>
                             </div>
                             <div class="price-details">
                                 <h5>Trial</h5>
-                                <span>30 day free trial</span>
+                                <span>30 Day Free Trial</span>
                                 <ul>
                                     <li>One Day Trial</li>
                                     <li>Limited Courses</li>
@@ -358,11 +370,12 @@
                                 <a href="">Choose Plan</a>
                             </div>
                         </div>
-                        <div class="trial-active">
+
+                        <div class="price-options">
                             <div class="trial-price">
                                 <span>55</span>
                             </div>
-                            <div class="price-details"> 
+                            <div class="price-details">
                                 <h5>Trial</h5>
                                 <span>Per month when paid annually</span>
                                 <ul>
@@ -377,7 +390,7 @@
                                 <a href="">Choose Plan</a>
                             </div>
                         </div>
-                        <div>
+                        <div class="price-options">
                             <div class="trial-price">
                                 <span>99</span>
                             </div>
@@ -396,7 +409,7 @@
                                 <a href="">Choose Plan</a>
                             </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </section>
     </main>

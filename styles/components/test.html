@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+            color:orange;
+        }
+        .menuToggle {
+            display: block;
+            position: relative;
+            top:50px;
+            left:50px;
+            z-index: 1;
+        }
+        .menuToggle input {
+            display: block;
+            width:40px; 
+            height:32px;
+            position: absolute;
+            top:-7px;
+            left:-5px;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 2;
+        }
+        .menuToggle span {
+            display: block;
+            width:33px;
+            height:4px;
+            margin-bottom:5px;
+            background:lavender;
+            position: relative;
+            border-radius: 3px;
+            z-index: 1;
+            
+        }
+        .menu {
+            position: absolute;
+            width:300px;
+            margin:-100px 0 0 50px;
+            padding:50px;
+            padding-top: 125px;
+            background:blue;
+        }
+        li {
+            padding:10px 0;
+            font-size:22px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="menuToggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="menu">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Pages</a>
+                </li>
+                <li>
+                    <a href="">Courses</a>
+                </li>
+                <li>
+                    <a href="">Features</a>
+                </li>
+                <li>
+                    <a href="">Shop</a>
+                </li>
+                <li>
+                    <a href="">News</a>
+                </li>
+                <li>
+                    <a href="">Events</a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-shopping-cart" aria-hidden="true">shop</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-search" aria-hidden="true">search</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
