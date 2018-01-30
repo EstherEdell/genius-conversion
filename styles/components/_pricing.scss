@@ -94,3 +94,11 @@
         max-width:300px;
     }
 }
+
+@media (max-width:480px) {
+    .price-details ul {
+        line-height: 36px;
+        min-height:275px;
+        padding-top:10px;
+    }
+}

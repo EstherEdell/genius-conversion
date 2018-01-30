@@ -379,7 +379,7 @@ h1 {
 
 @media (max-width: 667px) {
   .main-nav-links {
-    visibility: hidden; }
+    display: none; }
   .main-nav {
     height: 10vh; }
     .main-nav .fa-bars {
@@ -421,9 +421,14 @@ h1 {
   .hero {
     max-width: 480px; }
     .hero h2 {
+      padding-top: 10px;
       line-height: 36px; }
+    .hero p {
+      font-size: 12px; }
   .info-login ul li.register {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .hero-text {
+    padding: 0 5px; } }
 
 .courses-nav ul {
   list-style: none;
@@ -596,7 +601,18 @@ h1 {
   .gallery-photos img {
     max-width: 370px;
     width: 100%;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease; }
+    .gallery-photos img:hover {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      -webkit-box-shadow: 0px 3px 23px -2px rgba(0, 0, 0, 0.85);
+      box-shadow: 0px 3px 23px -2px rgba(0, 0, 0, 0.85); }
 
 @media (max-width: 940px) {
   .gallery-photos {
@@ -707,6 +723,22 @@ h1 {
     .news-text h5 {
       font-size: 18px; } }
 
+@media (max-width: 480px) {
+  .news-text {
+    margin-bottom: 20px; }
+    .news-text div {
+      margin-top: 10px; }
+      .news-text div span {
+        display: inline-block; }
+      .news-text div p {
+        margin-top: 10px;
+        margin-bottom: 20px; }
+      .news-text div a {
+        margin-bottom: 20px;
+        padding: 10px 10px; }
+    .news-text img {
+      display: none; } }
+
 .difference {
   background: #f0f2f7; }
 
@@ -771,6 +803,23 @@ h1 {
     flex-direction: column;
     margin-top: 75px;
     margin-left: 25px; } }
+
+@media (max-width: 480px) {
+  .news-text {
+    padding-right: 20px; }
+    .news-text p {
+      font-size: 12px; }
+  .diff-info {
+    margin-top: 25px;
+    padding-right: 5px;
+    padding-bottom: 30px; }
+  .diff-info div h5 {
+    font-size: 18px;
+    margin-bottom: 5px; }
+  .diff-info div img {
+    max-width: 20px; }
+  .diff-text p {
+    margin-top: 5px; } }
 
 .pricing {
   margin-bottom: 110px; }
@@ -854,6 +903,12 @@ h1 {
     margin: 0 auto;
     max-width: 300px; } }
 
+@media (max-width: 480px) {
+  .price-details ul {
+    line-height: 36px;
+    min-height: 275px;
+    padding-top: 10px; } }
+
 footer {
   background: #252525;
   padding-top: 80px;
@@ -869,7 +924,7 @@ footer {
     margin: 0; }
 
 .footer-text {
-  min-height: 470px;
+  min-height: 405px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,7 +1071,8 @@ footer {
       opacity: 0.8; }
 
 .footer-copyright {
-  background: black; }
+  background: black;
+  padding: 30px 0; }
   .footer-copyright div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1029,7 +1085,11 @@ footer {
       .footer-copyright div li a {
         text-decoration: none;
         font-size: 10px;
-        color: white; }
+        color: white;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-right: 30px; }
   .footer-copyright p {
     font-size: 14px;
     -ms-flex-item-align: center;
@@ -1091,8 +1151,15 @@ ul li {
     max-width: 475px; }
     .footer-courses ul li {
       padding: 0 2px; }
-  .footer-copyright p {
-    font-size: 10px; } }
+  div.footer-newsletter ul {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .footer-copyright {
+    padding: 10px; }
+    .footer-copyright p {
+      font-size: 10px; }
+  .footer-copyright div ul li a {
+    padding-right: 5px; } }
 
 body {
   font-family: 'Raleway', sans-serif;
