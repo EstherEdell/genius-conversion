@@ -79,11 +79,7 @@ h1 {
     right:15px;
 }
 .main-nav-links {
-    span {
-        position: absolute;
-        left:0%;
-        display:none;
-    }
+    
     ul {
     list-style: none;
     align-items: center;
@@ -138,6 +134,7 @@ h1 {
         line-height:30px;
         margin-bottom:55px;
         margin-top:55px;
+        animation:load 1s linear;   
     }
     a {
         background:$primaryColor;
@@ -150,12 +147,21 @@ h1 {
         padding:25px 35px 25px;
         letter-spacing: 1px;
         margin-top:50px;
+        animation:load 3s linear;   
         transition:all 0.2s;
         &:hover,
         &:focus {
             background:rgba(255, 255, 255, 0.6);
             border:5px solid $primaryColor;
             color:black;
+        }
+    }
+    @keyframes load {
+        0% {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
         }
     }
 }
@@ -196,15 +202,18 @@ h1 {
             max-width:25px;
         }
         h1 {
-            font-size:1rem;
+            font-size:1.5rem;
         }
+    }
+    .info-login ul {
+        flex-direction: column;
+        
     }
     .info-login {
         ul li {
             &:first-child {
-                padding-right:15px;
                 &:after {
-                    right:10px;
+                    display: none;
                 }
             }
             
@@ -231,17 +240,7 @@ h1 {
         }
     }
     .main-nav-links {
-        ul {
-            visibility: hidden;
-        }
-        span {
-            display: block;
-            left:50%;
-            top:100px;
-            &:hover::ul {
-                display:block;
-            }
-        }
+       
     }
 
 }

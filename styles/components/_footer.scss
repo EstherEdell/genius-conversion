@@ -227,5 +227,32 @@ footer {
     }
     .footer-blurb {
         max-width: 400px;
+        ul {
+            margin-bottom:15px;
+        }
+        .footer-blurb-logo {
+            justify-content: center;
+        }
+        p {
+            margin:15px 0;
+        }
+    }
+    .footer-courses ul {
+        display:flex;
+        margin:10px 0;
+        li {
+            padding:0 5px;
+        }
+    }
+    .footer-courses li {
+        &:hover {
+            list-style-type: circle;
+        }
+    }
+    .footer-contact {
+        
+        i, p {
+            margin-top:10px;
+        }
     }
 }
