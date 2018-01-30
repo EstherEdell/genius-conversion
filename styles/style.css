@@ -152,6 +152,27 @@ h4 {
   padding-top: 100px;
   padding-bottom: 20px; }
 
+.mag {
+  position: relative; }
+  .mag:before {
+    content: "";
+    width: 25px;
+    background: #86bc42;
+    display: block;
+    height: 1px;
+    position: absolute;
+    left: 45%;
+    top: 70%; }
+  .mag:after {
+    content: "";
+    width: 25px;
+    background: #86bc42;
+    display: block;
+    height: 1px;
+    position: absolute;
+    right: 45%;
+    top: 70%; }
+
 @media (max-width: 667px) {
   h3 {
     font-size: 24px; }
@@ -244,6 +265,21 @@ h1 {
   bottom: 0;
   right: 15px; }
 
+.main-nav {
+  position: relative; }
+  .main-nav .fa-bars {
+    color: #86bc42;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-right: 100px;
+    display: none; }
+
 .main-nav-links ul {
   list-style: none;
   -webkit-box-align: center;
@@ -302,9 +338,7 @@ h1 {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 55px;
-    margin-top: 55px;
-    -webkit-animation: load 1s linear;
-    animation: load 1s linear; }
+    margin-top: 55px; }
   .hero-text a {
     background: #86bc42;
     text-decoration: none;
@@ -313,14 +347,9 @@ h1 {
     font-size: 18px;
     line-height: 90px;
     font-weight: 700;
-    padding: 25px 35px 25px;
+    padding: 20px 35px 20px;
     letter-spacing: 1px;
-    margin-top: 50px;
-    -webkit-animation: load 3s linear;
-    animation: load 3s linear;
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s; }
+    margin-top: 50px; }
     .hero-text a:hover, .hero-text a:focus {
       background: rgba(255, 255, 255, 0.6);
       border: 5px solid #86bc42;
@@ -349,6 +378,12 @@ h1 {
       font-size: 1rem; } }
 
 @media (max-width: 667px) {
+  .main-nav-links {
+    visibility: hidden; }
+  .main-nav {
+    height: 10vh; }
+    .main-nav .fa-bars {
+      display: block; }
   .info-contact ul {
     display: inline-block; }
     .info-contact ul li {
@@ -381,6 +416,14 @@ h1 {
       font-size: 16px;
       padding: 15px 20px;
       margin-top: 30px; } }
+
+@media (max-width: 480px) {
+  .hero {
+    max-width: 480px; }
+    .hero h2 {
+      line-height: 36px; }
+  .info-login ul li.register {
+    padding-right: 0; } }
 
 .courses-nav ul {
   list-style: none;
@@ -531,7 +574,8 @@ h1 {
       font-weight: 700; } }
 
 .gallery {
-  background: #f0f2f7; }
+  background: #f0f2f7;
+  padding-bottom: 70px; }
 
 .gallery-photos {
   margin-top: 110px; }
@@ -539,28 +583,26 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-preferred-size: 1;
+    flex-basis: 1;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 30px; }
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .gallery-photos img {
-    -webkit-transition: -webkit-transform 0.4s ease;
-    transition: -webkit-transform 0.4s ease;
-    -o-transition: transform 0.4s ease;
-    transition: transform 0.4s ease;
-    transition: transform 0.4s ease, -webkit-transform 0.4s ease; }
-    .gallery-photos img:hover {
-      -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-      transform: scale(1.5);
-      -webkit-box-shadow: 0px 3px 23px -2px rgba(0, 0, 0, 0.85);
-      box-shadow: 0px 3px 23px -2px rgba(0, 0, 0, 0.85); }
+    max-width: 370px;
+    width: 100%;
+    margin-bottom: 30px; }
 
 @media (max-width: 940px) {
   .gallery-photos {
     margin-top: 50px; }
   .gallery-photos img {
-    max-width: calc(940px / 3); }
+    width: 33%; }
     .gallery-photos img:hover {
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -585,7 +627,7 @@ h1 {
     max-width: 530px;
     width: 100%;
     padding-right: 20px;
-    padding-top: 50px; }
+    margin-top: 72px; }
   .news-text img {
     position: relative;
     bottom: 30px;
@@ -593,7 +635,9 @@ h1 {
   .news-text h5 {
     font-size: 24px;
     line-height: 24px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px; }
   .news-text span {
     font-size: 12px;
     font-weight: 300;
@@ -601,7 +645,14 @@ h1 {
   .news-text p {
     font-size: 14px;
     font-weight: 300;
-    line-height: 24px; }
+    line-height: 24px;
+    margin-bottom: 70px;
+    margin-top: 40px; }
+  .news-text i {
+    color: black;
+    margin-right: 5px; }
+  .news-text .fa-comment {
+    margin-left: 10px; }
   .news-text a {
     color: white;
     background: #86bc42;
@@ -681,7 +732,8 @@ h1 {
   color: #222;
   font-weight: 700;
   line-height: 24px;
-  margin: 0; }
+  margin-top: 0;
+  margin-bottom: 20px; }
 
 .concept, .experience, .design {
   display: -webkit-box;
@@ -696,6 +748,10 @@ h1 {
 .diff-text {
   padding-left: 15px;
   z-index: 10000; }
+  .diff-text p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px; }
 
 .bg-circle {
   background: rgba(255, 255, 255, 0.5);
@@ -957,8 +1013,7 @@ footer {
     height: 40px;
     padding-top: 8px; }
     .email-input a:hover {
-      opacity: 0.8;
-      font-size: 24px; }
+      opacity: 0.8; }
 
 .footer-copyright {
   background: black; }
@@ -976,7 +1031,9 @@ footer {
         font-size: 10px;
         color: white; }
   .footer-copyright p {
-    font-size: 14px; }
+    font-size: 14px;
+    -ms-flex-item-align: center;
+    align-self: center; }
     .footer-copyright p span {
       color: #86bc42; }
 
@@ -1019,10 +1076,27 @@ ul li {
   .footer-courses li:hover {
     list-style-type: circle; }
   .footer-contact i, .footer-contact p {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .footer-newsletter h5 {
+    margin-top: 15px; }
+  .footer-newsletter p {
+    margin: 10px 0; }
+  .footer-newsletter .email-input {
+    margin-bottom: 15px; }
+    .footer-newsletter .email-input i {
+      font-size: 12px; } }
+
+@media (max-width: 480px) {
+  .footer-courses {
+    max-width: 475px; }
+    .footer-courses ul li {
+      padding: 0 2px; }
+  .footer-copyright p {
+    font-size: 10px; } }
 
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth; }
 
 img {
   display: block; }

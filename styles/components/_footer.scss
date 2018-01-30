@@ -174,8 +174,7 @@ footer {
         height:40px;
         padding-top:8px;
         &:hover {
-            opacity:0.8;
-            font-size:24px;
+            opacity:0.8;    
         }
     }
 }
@@ -197,6 +196,7 @@ footer {
     }
     p {
         font-size:14px;
+        align-self:center;
         span {
             color:$primaryColor;
         }
@@ -213,9 +213,6 @@ footer {
     .footer-courses 
     ul li {
         line-height: 28px;
-    }
-    .footer-address {
-        
     }
 }
 
@@ -250,9 +247,35 @@ footer {
         }
     }
     .footer-contact {
-        
         i, p {
             margin-top:10px;
+        }
+    }
+    .footer-newsletter {
+        h5 {
+            margin-top:15px;
+        }
+        p {
+            margin:10px 0;
+        }
+        .email-input {
+            margin-bottom:15px;
+            i {
+                font-size:12px;
+            }
+        }
+    }
+}
+@media (max-width:480px) {
+    .footer-courses {
+        max-width:475px;
+        ul li {
+            padding:0 2px;
+        }
+    }
+    .footer-copyright {
+        p {
+            font-size:10px;
         }
     }
 }

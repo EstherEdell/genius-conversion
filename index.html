@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Genius</title>
+    <link type="image/png" href="assets/genius-favicon.png" rel="icon">
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Montserrat:300,400" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
@@ -35,14 +36,15 @@
         </div>
         <!-- HEADER NAV -->
         <div class="main-nav">
+            <a href=""><i class="fas fa-bars"></i></a>
             <nav class="main-nav-links wrapper">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Pages</a></li>
-                    <li><a href="">Courses</a></li>
+                    <li><a href="#courses">Courses</a></li>
                     <li><a href="">Features</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">News</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#news">News</a></li>
                     <li><a href="">Events</a></li>
                     <li>
                         <a href=""><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
@@ -63,12 +65,12 @@
     </header>
     <!-- MAIN CONTENT -->
     <main> 
-        <section class="courses">
+        <section class="courses" id="courses">
             <div class="wrapper">
                 <div class="section-head">
                     <h4>Touch them if you want</h4>
                     <h3>Trending Courses</h3>
-                    <img src="assets/open-magazine.png" alt="" class="mag-icon">
+                    <div class="mag"><img src="assets/open-magazine.png" alt="" class="mag-icon"></div>
 
                 </div>
                 <div class="courses-nav">
@@ -239,15 +241,15 @@
                     <div class="section-head">
                         <h4>Lorem Ipsum Dolor</h4>
                         <h3>See Photo Gallery</h3>
-                        <img src="assets/open-magazine.png" alt="" class="mag-icon">
+                        <div class="mag"><img src="assets/open-magazine.png" alt="" class="mag-icon"></div>
                     </div>
                     <div class="gallery-photos">
                         <div>
                             <img src="assets/coffee-mug.jpg" alt="">
                             <img src="assets/art-supplies.jpg" alt="">
                             <img src="assets/notebook.jpg" alt="">
-                        </div>
-                        <div>
+                        <!-- </div>
+                        <div> -->
                             <img src="assets/postit.jpg" alt="">
                             <img src="assets/computer.jpg" alt="">
                             <img src="assets/files-folder.jpg" alt="">
@@ -256,12 +258,12 @@
                 </div>
             </section>
                 <!-- NEWS SECTION -->
-                <section class="news">
+                <section class="news" id="news">
                     <div class="wrapper">
                         <div class="section-head">
                             <h4>Lorem Ipsum Dolor</h4>
                             <h3>Latest News</h3>
-                            <img src="assets/open-magazine.png" alt="" class="mag-icon">
+                            <div class="mag"><img src="assets/open-magazine.png" alt="" class="mag-icon"></di>
                             
                         </div>
                         <div class="news-container">
@@ -269,7 +271,7 @@
                                 <img src="assets/books-desk.jpg" alt="">
                                     <div>
                                         <h5>Course in Digital Photography and Photoshop</h5>
-                                        <span>By admin</span><span>October 11, 2017</span>
+                                        <span><i class="fas fa-user"></i>By admin</span><span><i class="far fa-comment"></i>October 11, 2017</span>
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur perspiciatis illum hic quod quam consequatur, recusandae est laborum, numquam minus iusto maiores odit fugiat et. Sunt quidem nesciunt aperiam magni.</p>
                                         <a href="">Learn More</a>
                                     </div>
@@ -279,8 +281,8 @@
                                     <img src="assets/yellow-notebook.jpg" alt="">
                                     <div>
                                         <h5>Short Courses in Marketing</h5>
-                                        <span>By admin</span>
-                                        <span>October 11, 2017</span>
+                                        <span><i class="fas fa-user"></i>By admin</span>
+                                        <span><i class="far fa-comment"></i>October 11, 2017</span>
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur perspiciatis illum hic quod quam consequatur, recusandae
                                             est laborum, numquam minus iusto maiores odit fugiat et. Sunt quidem nesciunt aperiam magni.</p>
                                         <a href="">Learn More</a>
@@ -292,8 +294,8 @@
                                     <img src="assets/white-notebook.jpg" alt="">
                                     <div>
                                         <h5>Award in Education and Training</h5>
-                                        <span>By admin</span>
-                                        <span>October 11, 2017</span>
+                                        <span><i class="fas fa-user"></i>By admin</span>
+                                        <span><i class="far fa-comment"></i>October 11, 2017</span>
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur perspiciatis illum hic quod quam consequatur, recusandae
                                             est laborum, numquam minus iusto maiores odit fugiat et. Sunt quidem nesciunt aperiam magni.</p>
                                         <a href="">Learn More</a>
@@ -309,7 +311,7 @@
                         <div class="section-head">
                             <h4>Lorem Ipsum Dolor</h4>
                             <h3>What Makes Us Different?</h3>
-                            <img src="assets/open-magazine.png" alt="" class="mag-icon">
+                            <div class="mag"><img src="assets/open-magazine.png" alt="" class="mag-icon"></div>
                         </div>
                         <div class="diff-info">
                             <div class="concept">
@@ -341,12 +343,12 @@
                     
             </section>
     
-            <section class="pricing">
+            <section class="pricing" id="shop">
                 <div class="wrapper">
                     <div class="section-head">
                         <h4>Choose Your Pricing</h4>
                         <h3>The Best Pricing We Offer</h3>
-                        <img src="assets/open-magazine.png" alt="" class="mag-icon">
+                        <div class="mag"><img src="assets/open-magazine.png" alt="" class="mag-icon"></div>
                     </div>
                     <div class="price-container wrapper">
 

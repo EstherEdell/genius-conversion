@@ -26,6 +26,29 @@ h4 {
     padding-bottom:20px;
     
 }
+.mag {
+    position: relative;
+    &:before {
+        content:"";
+        width:25px;
+        background:$primaryColor;
+        display:block;
+        height:1px;
+        position: absolute;
+        left:45%;
+        top:70%;
+    }
+    &:after {
+        content:"";
+        width:25px;
+        background:$primaryColor;
+        display:block;
+        height:1px;
+        position: absolute;
+        right:45%;
+        top:70%;
+    }
+}
 
 @media (max-width: 667px) {
     h3 {

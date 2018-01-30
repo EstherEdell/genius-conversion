@@ -12,7 +12,7 @@
         max-width:530px;
         width:100%;
         padding-right:20px;
-        padding-top: 50px;
+        margin-top: 72px;
     }
     img {
         position:relative;
@@ -23,6 +23,8 @@
         font-size:24px;
         line-height: 24px;
         font-weight: 700;
+        margin-top:0;
+        margin-bottom:15px;
     }
     span {
         font-size:12px;
@@ -33,7 +35,17 @@
         font-size:14px;
         font-weight: 300;
         line-height: 24px;
+        margin-bottom:70px;
+        margin-top:40px;
     }
+    i {
+        color:black;
+        margin-right:5px;
+    }
+    .fa-comment {
+        margin-left:10px;
+    }
+
     a {
         color:white;
         background:$primaryColor;
