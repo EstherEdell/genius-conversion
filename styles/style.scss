@@ -1,3 +1,4 @@
+// ESTHER EDELL PROJECT 2
 @import "setup";
 @import "components/variables";
 @import "components/header";
@@ -7,16 +8,13 @@
 @import "components/differences";
 @import "components/pricing";
 @import "components/footer";
-// * {
-//     border:1px solid red;
-//  }
+
 body {
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
 }
 img {
     display:block;
-    // width:100%;
 }
 ul {
     padding:0;
@@ -43,11 +41,3 @@ ul {
 
 }
 
-
-
-
-//make partial
-//save the partial
-//delete partial
-//import the partial
-//save style.scss
