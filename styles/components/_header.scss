@@ -147,7 +147,8 @@ h1 {
         font-size:18px;
         line-height:30px;
         margin-bottom:55px;
-        margin-top:55px;   
+        margin-top:55px; 
+        animation: load 2s ease;  
     }
     a {
         background:$primaryColor;
@@ -160,6 +161,7 @@ h1 {
         padding:20px 35px 20px;
         letter-spacing: 1px;
         margin-top:50px;
+        animation: load 3s ease;
         &:hover,
         &:focus {
             background:rgba(255, 255, 255, 0.6);
@@ -186,6 +188,7 @@ h1 {
         padding-top:5vh;
         h2 {
             font-size:3rem;
+            padding-top: 15px;
         }
         p {
             font-size:1rem;
@@ -247,9 +250,10 @@ h1 {
         min-height:20vh;
     }
     .hero-text {
-        padding-top:15px;
+        padding-top:20px;
         h2 {
-            font-size:2rem;
+            font-size:1.75rem;
+            padding-top: 20px;
         }
         p {
             margin: 20px 0;

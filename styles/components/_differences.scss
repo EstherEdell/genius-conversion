@@ -14,6 +14,7 @@
     img {
         width:100%;
         max-width:30px;
+        z-index: 100;
     }
     h5 {
         font-size:24px;
@@ -57,12 +58,23 @@
 
 }
 
-@media (max-width:667px) {
+@media (max-width:640px) {
     .diff-info {
         flex-direction: column;
-        margin-top:75px;
+        margin-top:50px;
         margin-left:25px;
-        
+    }
+    .section-head {
+        h4 {
+            padding-top: 25px;
+        }
+    }
+    .diff-info .bg-circle {
+        width:100px;
+        height: 100px;
+        position: absolute;
+        top:0;
+        left:-25px;
     }
 }
 

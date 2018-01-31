@@ -57,4 +57,15 @@ h4 {
     h4 {
         font-size:14px;
     }
+    .mag .mag-icon {
+        padding-top: 5px;
+    }
+    .mag {
+        &:before {
+            display:none;
+        }
+        &:after {
+            display:none;
+        }
+    }
 }

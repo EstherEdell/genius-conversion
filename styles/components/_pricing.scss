@@ -75,14 +75,14 @@
     }
 }
 
-.price-details:hover {
+.price-options:hover .trial-price,
+.price-options:hover .price-details
+ {
     background:$primaryColor;
 }
 
 @media (max-width:940px) {
-    .price-options {
-        // display: flex;
-    }
+    
 }
 
 @media (max-width:667px) {

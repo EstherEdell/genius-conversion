@@ -177,7 +177,13 @@ h4 {
   h3 {
     font-size: 24px; }
   h4 {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .mag .mag-icon {
+    padding-top: 5px; }
+  .mag:before {
+    display: none; }
+  .mag:after {
+    display: none; } }
 
 .info-bar {
   background: #222221;
@@ -338,7 +344,9 @@ h1 {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 55px;
-    margin-top: 55px; }
+    margin-top: 55px;
+    -webkit-animation: load 2s ease;
+    animation: load 2s ease; }
   .hero-text a {
     background: #86bc42;
     text-decoration: none;
@@ -349,7 +357,9 @@ h1 {
     font-weight: 700;
     padding: 20px 35px 20px;
     letter-spacing: 1px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    -webkit-animation: load 3s ease;
+    animation: load 3s ease; }
     .hero-text a:hover, .hero-text a:focus {
       background: rgba(255, 255, 255, 0.6);
       border: 5px solid #86bc42;
@@ -373,7 +383,8 @@ h1 {
   .hero-text {
     padding-top: 5vh; }
     .hero-text h2 {
-      font-size: 3rem; }
+      font-size: 3rem;
+      padding-top: 15px; }
     .hero-text p {
       font-size: 1rem; } }
 
@@ -407,9 +418,10 @@ h1 {
   .hero {
     min-height: 20vh; }
   .hero-text {
-    padding-top: 15px; }
+    padding-top: 20px; }
     .hero-text h2 {
-      font-size: 2rem; }
+      font-size: 1.75rem;
+      padding-top: 20px; }
     .hero-text p {
       margin: 20px 0; }
     .hero-text a {
@@ -461,14 +473,13 @@ h1 {
   height: 100%; }
 
 .courses-blocks div {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 
 .courses-text {
   max-width: 270px;
   min-height: 200px;
   border: 1px solid #e1e1e1;
   border-top: none;
-  padding: 0 25px 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +496,8 @@ h1 {
     margin: 0;
     line-height: 24px;
     padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-left: 25px; }
   .courses-text h6 {
     font-size: 14px;
     font-weight: 400;
@@ -501,7 +513,8 @@ h1 {
 .course-author {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-left: 25px; }
   .course-author div {
     margin: 0; }
 
@@ -509,7 +522,9 @@ h1 {
   padding-left: 20px; }
 
 .course-response {
-  border-top: 1px solid #e1e1e1; }
+  border-top: 1px solid #e1e1e1;
+  padding-left: 25px;
+  padding-top: 15px; }
   .course-response span {
     font-size: 14px;
     line-height: 24px; }
@@ -543,7 +558,7 @@ h1 {
   .section-head h4 {
     padding: 15px 0; }
   .courses-nav ul {
-    padding: 25px 0; }
+    padding: 0px; }
   .courses-nav a {
     padding-right: 5px;
     text-decoration: underline;
@@ -681,27 +696,44 @@ h1 {
     .news-text a:hover {
       opacity: 0.5; }
 
+.news-text p:first-of-type {
+  margin-bottom: 55px; }
+
 @media (max-width: 940px) {
   .news-text {
     margin-bottom: 0px;
     position: relative; }
     .news-text:nth-child(1) {
       margin-top: 20px; }
+    .news-text:nth-child(3) {
+      margin-bottom: 40px; }
     .news-text img {
       position: relative;
       top: 0px;
       left: 0px;
-      max-width: 300px;
-      min-height: 300px;
-      height: 100%; }
+      max-width: 250px;
+      min-height: 250px;
+      height: 100%;
+      padding-top: 20px; }
     .news-text div {
-      padding-top: 10px; }
+      padding-top: 5px;
+      padding-left: 10px; }
     .news-text h5 {
       margin: 0;
-      padding-top: 10px; }
+      padding-top: 5px;
+      font-size: 20px; }
+    .news-text p {
+      margin-top: 20px;
+      margin-bottom: 10px; }
     .news-text a {
       position: relative;
-      bottom: 0px; } }
+      bottom: 0px;
+      padding: 10px 15px;
+      margin-bottom: 15px; }
+  .news-text div {
+    margin-top: 20px; }
+  .news-container {
+    margin-bottom: 20px; } }
 
 @media (max-width: 667px) {
   .news-text {
@@ -757,7 +789,8 @@ h1 {
 
 .diff-info div img {
   width: 100%;
-  max-width: 30px; }
+  max-width: 30px;
+  z-index: 100; }
 
 .diff-info div h5 {
   font-size: 24px;
@@ -795,14 +828,22 @@ h1 {
   left: -50px;
   z-index: 0; }
 
-@media (max-width: 667px) {
+@media (max-width: 640px) {
   .diff-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-top: 75px;
-    margin-left: 25px; } }
+    margin-top: 50px;
+    margin-left: 25px; }
+  .section-head h4 {
+    padding-top: 25px; }
+  .diff-info .bg-circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: -25px; } }
 
 @media (max-width: 480px) {
   .news-text {
@@ -890,7 +931,8 @@ h1 {
     padding-top: 20px;
     padding-bottom: 25px; }
 
-.price-details:hover {
+.price-options:hover .trial-price,
+.price-options:hover .price-details {
   background: #86bc42; }
 
 @media (max-width: 667px) {
