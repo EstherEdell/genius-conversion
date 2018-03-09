@@ -49,22 +49,3 @@ h4 {
     }
 }
 
-@media (max-width: 667px) {
-    h3 {
-        font-size:24px;
-    }
-    h4 {
-        font-size:14px;
-    }
-    .mag .mag-icon {
-        padding-top: 5px;
-    }
-    .mag {
-        &:before {
-            display:none;
-        }
-        &:after {
-            display:none;
-        }
-    }
-}

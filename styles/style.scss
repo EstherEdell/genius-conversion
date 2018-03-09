@@ -8,7 +8,7 @@
 @import "components/differences";
 @import "components/pricing";
 @import "components/footer";
-
+@import "components/_responsive.scss";
 body {
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;

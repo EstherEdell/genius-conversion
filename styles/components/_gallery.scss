@@ -9,7 +9,7 @@
         display:flex;
         flex-basis: 1;
         flex-wrap:wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
     img {
@@ -25,15 +25,3 @@
     }
 }
 
-@media (max-width: 940px) {
-    .gallery-photos {
-        margin-top:50px;
-    }
-    .gallery-photos img {
-        width:33%;
-        &:hover {
-            transform: scale(1);
-            box-shadow:none;    
-        }
-    }
-}

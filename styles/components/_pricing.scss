@@ -81,24 +81,4 @@
     background:$primaryColor;
 }
 
-@media (max-width:940px) {
-    
-}
 
-@media (max-width:667px) {
-    .price-container {
-        flex-direction:column;
-    }
-    .price-options {
-        margin:0 auto;
-        max-width:300px;
-    }
-}
-
-@media (max-width:480px) {
-    .price-details ul {
-        line-height: 36px;
-        min-height:275px;
-        padding-top:10px;
-    }
-}

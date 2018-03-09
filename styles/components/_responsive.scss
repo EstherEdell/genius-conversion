@@ -1,0 +1,363 @@
+@media (max-width:1200px) {
+    .news {
+        margin-bottom:150px;
+    }
+    .news-text {
+        max-width:1000px;
+        margin:0 auto;
+        img {
+            bottom:0;
+            left:0;
+            // max-width:400px;
+            width:100%;
+        }
+    }
+    .news-text .news-text-main {
+        max-width: 400px;
+        a {
+            padding:15px 10px;
+        }
+    }
+    .diff-info {
+        max-width:900px;
+        margin:0 auto;
+        padding-top: 50px;
+    }
+    .footer-copyright div {
+        max-width: 1000px;
+    }
+}
+@media (max-width: 940px) {
+    .gallery-photos {
+        margin-top:50px;
+    }
+    .gallery-photos img {
+        width:33%;
+        &:hover {
+            transform: scale(1);
+            box-shadow:none;    
+        }
+    }
+    .courses-block {
+        grid-gap:0px;
+    }
+    .hero {
+        min-height:40vh;
+    }
+    .hero-text {
+        padding-top:5vh;
+        h2 {
+            font-size:3rem;
+            padding-top: 15px;
+        }
+        p {
+            font-size:1rem;
+        }
+         
+    }
+    .news-text-main {
+        margin-top:10px;
+    }
+    .news-text-main p {
+        margin-top:0px;
+    }
+    footer {
+        padding-top:25px;
+        h5 {
+            font-size:18px;
+        }
+    }
+    .footer-courses 
+    ul li {
+        line-height: 28px;
+    }
+}
+@media (max-width: 667px) {
+    h3 {
+        font-size:24px;
+    }
+    h4 {
+        font-size:14px;
+    }
+    .mag .mag-icon {
+        padding-top: 5px;
+    }
+    .mag {
+        &:before {
+            display:none;
+        }
+        &:after {
+            display:none;
+        }
+    }
+    .diff-info {
+        flex-direction: column;
+        align-items: center;
+        max-width:500px;
+        padding-top:75px;
+    }
+    .section-head {
+        h4 {
+            padding-top: 25px;
+        }
+    }
+    .diff-info .bg-circle {
+        width:100px;
+        height: 100px;
+        position: absolute;
+        top:0;
+        left:-25px;
+    }
+    
+    .main-nav-links ul {
+        flex-direction: column;
+        align-items: left;
+        display: none;
+        overflow: hidden;
+        padding:0;
+    }
+    .main-nav input:checked ~ .main-nav-links ul {
+        // max-height:100%;
+        display:block;
+    }
+    .main-nav-links a {
+        display: block;
+    }
+    .main-nav label {
+        display:block;
+        cursor:pointer;
+        background:url('../assets/hamburger.png') no-repeat center;
+        background-size: 30px;
+        min-height:60px;
+    }
+    // .main-nav-links {
+    //     display: none;
+    // }
+    // .main-nav {
+    //     height:10vh;
+    //     .fa-bars {
+    //         display: block;
+    //     }
+    // }
+    .info-contact {
+        ul {
+            display:inline-block;
+            li {
+                margin:0;
+                padding:0;
+            }
+        }
+        i {
+            visibility: hidden;
+        }
+    
+    }
+    .info-logo {
+        img {
+            max-width:25px;
+        }
+        h1 {
+            font-size:1.5rem;
+        }
+    }
+    .info-login ul {
+        flex-direction: column;
+        
+    }
+    .info-login {
+        ul li {
+            &:first-child {
+                &:after {
+                    display: none;
+                }
+            }
+            
+        }
+        a {
+            padding:0 5px;
+        }
+    }
+    .hero {
+        min-height:20vh;
+    }
+    .hero-text {
+        padding-top:20px;
+        h2 {
+            font-size:1.75rem;
+            padding-top: 20px;
+        }
+        p {
+            margin: 20px 0;
+        }
+        a {
+            font-size:16px;
+            padding:15px 20px;
+            margin-top:30px;
+        }
+    }
+    .gallery-photos div {
+        display: grid;
+        grid-template-columns: 1fr;
+        img {
+            margin:0 auto;
+            width:100%;
+            max-width:380px;
+            padding-bottom:15px;
+        }
+    }
+    .news-text {
+        flex-direction: column;
+        align-items:center;
+        img {
+            max-width: 400px;
+            margin-top:15px;
+        }
+        p {
+            margin-bottom:40px;
+        }
+        a {
+            margin-bottom:15px;
+        }
+    }
+    .news-text .news-text-main{
+        margin-top: 50px;
+    }
+    .price-container {
+        flex-direction:column;
+    }
+    .price-options {
+        margin:0 auto;
+        max-width:300px;
+    }
+    .footer-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-blurb {
+        max-width: 400px;
+        ul {
+            margin-bottom:15px;
+        }
+        .footer-blurb-logo {
+            justify-content: center;
+        }
+        p {
+            margin:15px 0;
+        }
+    }
+    .footer-courses ul {
+        display:flex;
+        margin:10px 0;
+        li {
+            padding:0 5px;
+        }
+    }
+    .footer-courses li {
+        &:hover {
+            list-style-type: circle;
+        }
+    }
+    .footer-contact {
+        i, p {
+            margin-top:10px;
+        }
+    }
+    .footer-newsletter {
+        h5 {
+            margin-top:15px;
+        }
+        p {
+            margin:10px 0;
+        }
+        .email-input {
+            margin-bottom:15px;
+            i {
+                font-size:12px;
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .hero {
+        max-width:480px;
+        h2 {
+            padding-top: 10px;
+            line-height:36px;
+        }
+        p {
+            font-size:12px;
+        }
+    }
+    .info-login ul li.register {
+        padding-right:0;
+    }
+    .hero-text {
+        padding:0 5px;
+    }
+    .news-text {
+        padding-right:20px;
+        p {
+            font-size:12px;
+        }
+    }
+    .diff-info {
+        margin-top:25px;
+        padding-right:5px;
+        padding-bottom:30px;
+    }
+    .diff-info div h5 {
+        font-size:18px;
+        margin-bottom:5px;
+    }
+    .diff-info div img {
+        max-width:20px;
+    }
+    .diff-text {
+        p {
+            margin-top:5px;
+        }
+    }
+    .price-details ul {
+        line-height: 36px;
+        min-height:275px;
+        padding-top:10px;
+    }
+    .footer-text {
+        text-align: left;
+        h5 {
+            text-align: center;
+        }
+    }
+    .footer-courses {
+        max-width:475px;
+        ul li {
+            padding:0 2px;
+        }
+    }
+    .footer-contact {
+        max-width:400px;
+    }
+    .footer-newsletter {
+        max-width: 400px;
+    }
+    .email-input input {
+        max-width:425px;
+        border-radius: 0;
+    }
+    div.footer-newsletter ul {
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .footer-copyright .wrapper {
+        padding:10px;
+        margin:0 15px;
+        p {
+            font-size:10px;
+        }
+    }
+    .footer-copyright div ul li a {
+        padding-right:5px;
+    }
+}
